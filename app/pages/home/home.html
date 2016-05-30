@@ -1,16 +1,40 @@
 <ion-navbar *navbar>
   <ion-title>
-    Home
+    Kaki Repot
   </ion-title>
 </ion-navbar>
 
 <ion-content class="home">
-  <ion-card>
-    <ion-card-header>
-      Card Header
-    </ion-card-header>
-    <ion-card-content>
-      Hello World
-    </ion-card-content>
-  </ion-card>
+  <ion-list>
+    <ion-item>
+      <ion-label>Nama</ion-label>
+      <ion-input type="text" value=""></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>No Mykad</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>No Telefon</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Tarikh & Masa</ion-label>
+      <ion-datetime displayFormat="DD-MM-YYYY h:mm a" [(ngModel)]="myDate"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label>Tempat Kejadian</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>No Plat Kenderaan</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Jenis / Model Kenderaan</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+    <button>Gambar</button>
+    <button>Hantar</button>
+  </ion-list>
 </ion-content>
