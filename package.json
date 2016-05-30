@@ -35,7 +35,8 @@
     "ionic-plugin-keyboard",
     "cordova-plugin-camera",
     "cordova-plugin-image-picker",
-    "cordova-plugin-email-composer"
+    "cordova-plugin-email-composer",
+    "cordova-plugin-datepicker"
   ],
   "cordovaPlatforms": [
     "ios",
