@@ -19,8 +19,12 @@
       <ion-input type="text"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label>Tarikh & Masa</ion-label>
-      <ion-datetime displayFormat="DD-MM-YYYY h:mm a" [(ngModel)]="myDate"></ion-datetime>
+      <ion-label>Tarikh</ion-label>
+      <ion-datetime displayFormat="DD-MM-YYYY" pickerFormat="DD MM YYYY" [(ngModel)]="date"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label>Masa</ion-label>
+      <ion-datetime displayFormat="h:mm A" pickerFormat="h mm A" [(ngModel)]="time"></ion-datetime>
     </ion-item>
     <ion-item>
       <ion-label>Tempat Kejadian</ion-label>
@@ -34,7 +38,11 @@
       <ion-label>Jenis / Model Kenderaan</ion-label>
       <ion-input type="text"></ion-input>
     </ion-item>
-    <button>Gambar</button>
+    <button (click)="showDatePicker()">Tarikh</button>
+    <button (click)="showTimePicker()">Masa</button>
+    <button (click)="showDateTimePicker()">Tarikh & Masa</button>
+    <button (click)="getGeolocationData()">Geo</button>
+    <button (click)="showCamera()">Camera</button>
     <button>Hantar</button>
   </ion-list>
 </ion-content>
